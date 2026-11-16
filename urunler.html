@@ -3,18 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tüm Ürünler — Dup Luxury Wear</title>
+<title>Tüm ürünler — Dup Luxury Wear</title>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header>
   <div class="nav">
-    <a class="logo" href="index.html">DUP LUXURY</a>
+    <a class="logo" href="index.html"><img src="https://cdn.shopier.app/logo_234/DupLuxuryWearr5026_4E09C418-09DF-4D69-A087-E4B44A6AD1F6.png" alt=""><span>DUP LUXURY</span></a>
     <button class="burger">☰</button>
-    <nav class="menu">
-      <a href="urunler.html">Yeni Gelenler</a><a href="urunler.html">Sweatshirt</a><a href="urunler.html">Mont / Ceket</a><a href="urunler.html">Triko</a><a href="urunler.html">Pantolon</a><a href="urunler.html">Şapka / Bere</a><a href="secal.html" style="color:#b9a06a">Seç Al 499</a>
-    </nav>
-    <div class="acts"><a href="urunler.html">Ara</a><a class="cart" href="#">Sepet · <span id="cnt">0</span></a></div>
+    <nav class="menu"><a href="urunler.html">Yeni gelenler</a><a href="urunler.html">Sweatshirt</a><a href="urunler.html">Triko</a><a href="urunler.html">Mont / Ceket</a><a href="urunler.html">Şapka / Bere</a><a href="urunler.html">Aksesuar</a><a href="secal.html" style="color:#b9a06a">Seç Al 499</a></nav>
+    <div class="acts"><a href="beden-tablosu.html">Beden tablosu</a><a class="cart" href="#">Sepet · <span id="cnt">0</span></a></div>
   </div>
 </header>
 
@@ -23,56 +21,119 @@
   <div class="layout">
     <aside class="side">
       <h4>KATEGORİ</h4>
-      <a href="#">Sweatshirt / Kapüşonlu</a><a href="#">Mont / Ceket / Yelek</a><a href="#">Triko / Kazak</a><a href="#">Pantolon</a><a href="#">Eşofman Altı</a><a href="#">Şapka / Bere</a><a href="#">Gözlük / Aksesuar</a><a href="#">Parfüm</a><a href="#">Çanta / Cüzdan</a><a href="#">Ayakkabı / Terlik</a><a href="#">Outlet</a>
+      <a href="#">Sweatshirt / Kapüşonlu</a><a href="#">Triko / Kazak</a><a href="#">Mont / Ceket</a><a href="#">Şapka / Bere</a><a href="#">Atkı / Kemer / Rozet</a><a href="#">Boxer</a><a href="#">Outlet</a>
       <h4>MARKA</h4>
-      <label><input type="checkbox">Allsaints</label><label><input type="checkbox">Carhartt</label><label><input type="checkbox">Barbour</label><label><input type="checkbox">RL</label><label><input type="checkbox">Stone Island</label><label><input type="checkbox">Balenciaga</label>
+      <a href="#">Allsaints</a><a href="#">Carhartt</a><a href="#">Barbour</a><a href="#">RL</a>
       <h4>BEDEN</h4>
-      <label><input type="checkbox">S</label><label><input type="checkbox">M</label><label><input type="checkbox">L</label><label><input type="checkbox">XL</label><label><input type="checkbox">XXL</label>
+      <a href="#">S</a><a href="#">M</a><a href="#">L</a><a href="#">XL</a><a href="#">XXL</a>
       <h4>FİYAT</h4>
-      <a href="#">0 – 1.000 TL</a><a href="#">1.000 – 2.500 TL</a><a href="#">2.500 – 5.000 TL</a><a href="#">5.000 TL üzeri</a>
+      <a href="#">0 – 1.000 TL</a><a href="#">1.000 – 2.500 TL</a><a href="#">2.500 TL üzeri</a>
     </aside>
     <main>
-      <h1 style="font-size:24px;letter-spacing:-.6px;margin-bottom:14px">Tüm ürünler</h1>
+      <h1 style="font-size:23px;letter-spacing:-.6px;margin-bottom:14px">Tüm ürünler</h1>
       <div class="toolbar">
-        <span>5.565 ürün</span>
-        <div style="display:flex;gap:8px;align-items:center">
-          <button class="size on" data-filter="all">Tümü</button>
-          <button class="size" data-filter="outlet">Outlet</button>
+        <span>39 ürün</span>
+        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+          <div class="chips">
+            <button class="chip on" data-filter="all">Tümü</button>
+            <button class="chip" data-filter="sweat">Sweatshirt</button>
+            <button class="chip" data-filter="triko">Triko</button>
+            <button class="chip" data-filter="ceket">Mont / Ceket</button>
+            <button class="chip" data-filter="bere">Şapka / Bere</button>
+            <button class="chip" data-filter="aks">Aksesuar</button>
+            <button class="chip" data-filter="boxer">Boxer</button>
+            <button class="chip" data-filter="outlet">Outlet</button>
+          </div>
           <select id="sort"><option value="">Sırala</option><option value="asc">Fiyat artan</option><option value="desc">Fiyat azalan</option></select>
         </div>
       </div>
       <div class="grid" id="grid">
-        <a class="card" href="urun.html" data-cat="yeni" data-price="2199.90"><div class="thumb"><img src="https://i.frog.ink/bssg2nt1/303671308646-0.jpg" alt=""><span class="tag d">%21</span></div><div class="cname">Allsaints Orjinal Etiketli Kapüşonlu Bej (Modal)</div><div class="cprice"><s>2.799,90 TL</s><b>2.199,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="yeni" data-price="2499.92"><div class="thumb"><div class="ph">CARHARTT</div><span class="tag d">%17</span></div><div class="cname">Carhartt WIP Kazak Koyu Gri (Orjinal)</div><div class="cprice"><s>2.999,90 TL</s><b>2.499,92 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="yeni" data-price="2499.90"><div class="thumb"><div class="ph">RL</div><span class="tag d">%17</span></div><div class="cname">RL Kapüşonlu Sweatshirt Su Yeşili (Orjinal)</div><div class="cprice"><s>2.999,90 TL</s><b>2.499,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="yeni" data-price="5999.90"><div class="thumb"><img src="https://cdn.sanity.io/images/5l2ep0d7/production/5d7386280a765c51aa7d1c8f017773096651f271-1500x1500.webp?w=800&q=80&auto=format&fit=max" alt=""><span class="tag d">%14</span></div><div class="cname">Barbour Orjinal Etiketli Desenli Dolgulu Ceket</div><div class="cprice"><s>6.999,90 TL</s><b>5.999,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="1999.92"><div class="thumb"><div class="ph">RL</div><span class="tag d">%20</span></div><div class="cname">RL Orjinal Etiketli Triko Kazak Siyah 01</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,92 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="1699.90"><div class="thumb"><img src="https://rebuild-era.com/cdn/shop/files/Dark_Streetwear_Editorial_T-Shirt.png?v=1780148028&width=700" alt=""><span class="tag d">%23</span></div><div class="cname">Allsaints Orjinal Etiketli Sweatshirt Kahve (Modal)</div><div class="cprice"><s>2.199,90 TL</s><b>1.699,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="5999.90"><div class="thumb"><img src="https://cdn.sanity.io/images/5l2ep0d7/production/5d7386280a765c51aa7d1c8f017773096651f271-1500x1500.webp?w=800&q=80&auto=format&fit=max" alt=""><span class="tag d">%14</span></div><div class="cname">Carhartt Fermuarlı Ceket Kahve (Orjinal)</div><div class="cprice"><s>6.999,90 TL</s><b>5.999,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="1999.90"><div class="thumb"><img src="https://www.remeinz.com/cdn/shop/files/IMG_-_001_IMG_-_003_IMG_-_004_1.jpg?v=1774908373&width=600" alt=""><span class="tag d">%20</span></div><div class="cname">Barbour Orjinal Deri Kemer Siyah</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="1759.92"><div class="thumb"><div class="ph">PRD</div><span class="tag d">%20</span></div><div class="cname">PRD Orjinal Etiketli Sweatshirt Bordo (Özel Kumaş)</div><div class="cprice"><s>2.199,90 TL</s><b>1.759,92 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="1759.92"><div class="thumb"><div class="ph">ESSENTIALS</div><span class="tag d">%20</span></div><div class="cname">Essentials Orjinal Etiketli Long Sleeve Beyaz</div><div class="cprice"><s>2.199,90 TL</s><b>1.759,92 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="2239.92"><div class="thumb"><img src="https://ae01.alicdn.com/kf/H9dbac5e4f8894b94ac0a153029d94513y.png" alt=""><span class="tag d">%20</span></div><div class="cname">Alo Yoga Orjinal Etiketli Eşofman Altı Siyah</div><div class="cprice"><s>2.799,90 TL</s><b>2.239,92 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="2239.92"><div class="thumb"><div class="ph">STONE ISLAND</div><span class="tag d">%20</span></div><div class="cname">Stone Island Orjinal Etiketli Yarım Fermuarlı Hardal</div><div class="cprice"><s>2.799,90 TL</s><b>2.239,92 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="899.90"><div class="thumb"><img src="https://www.neweracap.com/cdn/shop/files/60973654_KNIT_CASHMERECUFFLESSKN_NONLIC_BLK_R.jpg?v=1787249151&width=600" alt=""><span class="tag d">%25</span></div><div class="cname">Barbour Yün Bere Bej</div><div class="cprice"><s>1.199,90 TL</s><b>899,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="1599.92"><div class="thumb"><img src="https://www.neweracap.com/cdn/shop/files/60973654_KNIT_CASHMERECUFFLESSKN_NONLIC_BLK_R.jpg?v=1787249151&width=600" alt=""><span class="tag d">%20</span></div><div class="cname">Coach İthal Şapka 01</div><div class="cprice"><s>1.999,90 TL</s><b>1.599,92 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="2499.90"><div class="thumb"><img src="https://shopgug.com/cdn/shop/products/WebsiteAccessoryTemplate2-2022-10-29T085720.048.png?v=1667051962&width=600" alt=""></div><div class="cname">Ray-Ban Polarize Gözlük Gold (Asap Rocky)</div><div class="cprice"><b>2.499,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="2399.92"><div class="thumb"><img src="https://ae01.alicdn.com/kf/H9dbac5e4f8894b94ac0a153029d94513y.png" alt=""><span class="tag d">%20</span></div><div class="cname">Gucci Orjinal Etiketli Pamuklu Jogger Siyah</div><div class="cprice"><s>2.999,90 TL</s><b>2.399,92 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="outlet" data-price="1999.90"><div class="thumb"><div class="ph">TH</div><span class="tag s">%50</span></div><div class="cname">TH Orjinal Etiketli Mont Bej (Gramajlı)</div><div class="cprice"><s>3.999,90 TL</s><b>1.999,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="outlet" data-price="999.90"><div class="thumb"><div class="ph">CK</div><span class="tag s">%50</span></div><div class="cname">CK Orjinal Etiketli Tam Fermuarlı Sweatshirt Siyah</div><div class="cprice"><s>1.999,90 TL</s><b>999,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="outlet" data-price="5999.90"><div class="thumb"><div class="ph">MNCLR</div><span class="tag s">%50</span></div><div class="cname">MNCLR Orjinal Etiketli Kaz Tüyü Mont</div><div class="cprice"><s>11.999,90 TL</s><b>5.999,90 TL</b></div></a>
-        <a class="card" href="urun.html" data-cat="" data-price="999.90"><div class="thumb"><div class="ph">CK</div></div><div class="cname">CK Kutulu Boxer 3'lü Siyah (Orjinal)</div><div class="cprice"><b>999,90 TL</b></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="2199.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_ec368af04edbeec84b60d48b39f95b62.jpeg" alt=""><span class="tag d">%21</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Kapüşonlu Bej (Modal)</div><div class="cprice"><s>2.799,90 TL</s><b>2.199,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52824074" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="2199.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_040420fbc2d8e6065be44ae49583fab0.jpeg" alt=""><span class="tag d">%21</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Kapüşonlu Bej (Modal) — 2</div><div class="cprice"><s>2.799,90 TL</s><b>2.199,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52823551" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="2199.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_6aa6739ba9d532b313436b5094627d66.jpeg" alt=""><span class="tag d">%21</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Kapüşonlu Siyah (Modal)</div><div class="cprice"><s>2.799,90 TL</s><b>2.199,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52824009" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="2199.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_bd82ab42e1b1d36b672706cf292f0162.jpeg" alt=""><span class="tag d">%21</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Kapüşonlu Bordo (Modal)</div><div class="cprice"><s>2.799,90 TL</s><b>2.199,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52823360" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="2199.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_2dc2cdc3e0259c445c1353b4e1b1e2e3.jpeg" alt=""><span class="tag d">%21</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Kapüşonlu Lacivert (Modal)</div><div class="cprice"><s>2.799,90 TL</s><b>2.199,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52823429" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="2499.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_8e8ada64537a988df6b3a0cb81b59a91.jpeg" alt=""><span class="tag d">%17</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">RL Kapüşonlu Sweatshirt Nar Çiçeği (Orjinal)</div><div class="cprice"><s>2.999,90 TL</s><b>2.499,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52822118" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="2499.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_fa6a52a51d9aa34bc23522eadf90a79a.jpeg" alt=""><span class="tag d">%17</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">RL Kapüşonlu Sweatshirt Su Yeşili (Orjinal)</div><div class="cprice"><s>2.999,90 TL</s><b>2.499,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52822101" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="1699.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_00d7856474a4deb1df659e3fe8fef7e4.jpeg" alt=""><span class="tag d">%23</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Sweatshirt Kahve (Modal)</div><div class="cprice"><s>2.199,90 TL</s><b>1.699,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52822361" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="1699.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_db7a43ca27031b90190664cef585672f.jpeg" alt=""><span class="tag d">%23</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Sweatshirt Bej (Modal)</div><div class="cprice"><s>2.199,90 TL</s><b>1.699,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52822254" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="1699.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_6cdb3c90f765c344166a59ad5617d691.jpeg" alt=""><span class="tag d">%23</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Sweatshirt Çağla Yeşil (Modal)</div><div class="cprice"><s>2.199,90 TL</s><b>1.699,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52822240" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="1699.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_7ddb2e29fb626d166424fd8290015932.jpeg" alt=""><span class="tag d">%23</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Sweatshirt İndigo (Modal)</div><div class="cprice"><s>2.199,90 TL</s><b>1.699,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52822185" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="1699.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_7ad47d7ce2225b8b934fef10ac401bb3.jpeg" alt=""><span class="tag d">%23</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Sweatshirt Bordo (Modal)</div><div class="cprice"><s>2.199,90 TL</s><b>1.699,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52822217" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="sweat" data-price="1699.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_7742943f7430a5622c33c790c769ad0c.jpeg" alt=""><span class="tag d">%23</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Allsaints Orjinal Etiketli Sweatshirt Koyu Antrasit (Modal)</div><div class="cprice"><s>2.199,90 TL</s><b>1.699,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52822383" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="2499.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_272bf6cac4fdc14f4ec134d5eca3a970.jpeg" alt=""><span class="tag d">%17</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Carhartt WIP Kazak Koyu Gri (Orjinal)</div><div class="cprice"><s>2.999,90 TL</s><b>2.499,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52868428" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="2499.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_2272e83752efbcf102e26768391f2794.jpeg" alt=""><span class="tag d">%17</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Carhartt WIP Kazak Siyah (Orjinal)</div><div class="cprice"><s>2.999,90 TL</s><b>2.499,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52866133" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="2499.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_e5f9d2d3d71cb343c632d82bb20f9bf8.jpeg" alt=""><span class="tag d">%17</span></div><div class="cbody"><div class="cname">Allsaints Örme Kazak Siyah (Orjinal)</div><div class="cprice"><s>2.999,90 TL</s><b>2.499,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52654818" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="1999.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_85b2f339acef969205755b0d788b4cc6.jpeg" alt=""><span class="tag d">%20</span></div><div class="cbody"><div class="cname">RL Orjinal Etiketli Triko Kazak Siyah 01</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51232314" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="1999.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_fa62f3a8b7fc3d1711b0e867fd1cfc46.jpeg" alt=""><span class="tag d">%20</span></div><div class="cbody"><div class="cname">RL Orjinal Etiketli Triko Kazak Haki</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51232253" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="1999.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_75128fc2cfc38b4e8e7fed9117970afe.jpeg" alt=""><span class="tag d">%20</span></div><div class="cbody"><div class="cname">RL Orjinal Etiketli Triko Kazak Kahve</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51232319" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="1999.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_3635d46f88327ac9c1121c8444534d03.jpeg" alt=""><span class="tag d">%20</span></div><div class="cbody"><div class="cname">RL Orjinal Etiketli Triko Kazak Siyah 02</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51232397" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="1999.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_a869aa7b9f11e8e4afc5b6b305e54b90.jpeg" alt=""><span class="tag d">%20</span></div><div class="cbody"><div class="cname">RL Orjinal Etiketli Triko Kazak Sarı</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51232368" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="triko" data-price="1999.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_6ac169a028f5c1acf8603ee85482cc17.jpeg" alt=""><span class="tag d">%20</span></div><div class="cbody"><div class="cname">RL Orjinal Etiketli Triko Kazak Lacivert</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51232357" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="ceket" data-price="5999.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_4fa02518ca8243d2e90a95966b67108e.jpeg" alt=""><span class="tag d">%14</span><span class="tag n" style="left:auto;right:9px">YENİ</span></div><div class="cbody"><div class="cname">Barbour Orjinal Etiketli Desenli Dolgulu Ceket</div><div class="cprice"><s>6.999,90 TL</s><b>5.999,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52826066" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="ceket" data-price="10999.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_6a10cd56360a3a2c9c207300dc3b9233.jpeg" alt=""><span class="tag d">%12</span><span class="tag s" style="left:auto;right:9px">SON ÜRÜN</span></div><div class="cbody"><div class="cname">Barbour Orjinal Yağlı Ceket Kahve</div><div class="cprice"><s>12.499,90 TL</s><b>10.999,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51191948" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="bere" data-price="899.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_9a742ef8cbab9bd29099722d986c081f.jpeg" alt=""><span class="tag d">%25</span></div><div class="cbody"><div class="cname">Barbour Orjinal Etiketli Bere Siyah</div><div class="cprice"><s>1.199,90 TL</s><b>899,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51540060" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="bere" data-price="899.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_9e3435344919dc066a4dcea7fe4beb58.jpeg" alt=""><span class="tag d">%25</span><span class="tag s" style="left:auto;right:9px">SON ÜRÜN</span></div><div class="cbody"><div class="cname">Barbour Orjinal Etiketli Bere Yeşil</div><div class="cprice"><s>1.199,90 TL</s><b>899,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51539640" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="bere" data-price="899.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_7854617445500075a58f7457bc558472.jpeg" alt=""><span class="tag d">%25</span></div><div class="cbody"><div class="cname">Barbour Orjinal Etiketli Bere Haki</div><div class="cprice"><s>1.199,90 TL</s><b>899,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52181179" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="bere" data-price="1399.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_526c6c4dac9531b9ebde6c1dc1b899de.jpeg" alt=""><span class="tag d">%22</span></div><div class="cbody"><div class="cname">Barbour Orjinal Etiketli Kadife Kasket 013</div><div class="cprice"><s>1.799,90 TL</s><b>1.399,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52510118" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="1199.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_d3863e7027513635ce53a6c91919bd2c.jpeg" alt=""><span class="tag d">%14</span><span class="tag s" style="left:auto;right:9px">SON ÜRÜN</span></div><div class="cbody"><div class="cname">Barbour Desenli Atkı Şal 08 (Unisex)</div><div class="cprice"><s>1.399,90 TL</s><b>1.199,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52834032" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="1199.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_faa184cf7887792c8ef6109edfe564a6.jpeg" alt=""><span class="tag d">%14</span></div><div class="cbody"><div class="cname">Barbour Desenli Atkı Şal (Unisex)</div><div class="cprice"><s>1.399,90 TL</s><b>1.199,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51226616" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="1199.92"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_36b00dcecc5643a9be99faf261d4ee7a.jpeg" alt=""><span class="tag d">%14</span></div><div class="cbody"><div class="cname">Barbour Desenli Atkı Şal 04 (Unisex)</div><div class="cprice"><s>1.399,90 TL</s><b>1.199,92 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52303182" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="1999.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_4931655eabcc5b46d2e9a3fc57c7b486.jpeg" alt=""><span class="tag d">%20</span></div><div class="cbody"><div class="cname">Barbour Orjinal Deri Kemer Koyu Kahve</div><div class="cprice"><s>2.499,90 TL</s><b>1.999,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/52756434" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="499.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_bf785e5b52224efb282367d0c03afc2a.jpeg" alt=""></div><div class="cbody"><div class="cname">Barbour Orjinal Rozet 01</div><div class="cprice"><b>499,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51540481" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="499.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_af9fc54d806e417b033f8d29a116597a.jpeg" alt=""></div><div class="cbody"><div class="cname">Barbour Orjinal Rozet 02</div><div class="cprice"><b>499,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51540487" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="499.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_482db183d15c6599be4ee61222bdde64.jpeg" alt=""></div><div class="cbody"><div class="cname">Barbour Orjinal Rozet 03</div><div class="cprice"><b>499,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51540504" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="499.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_2ce0867b1948099e583923c4f3c9d5e2.jpeg" alt=""></div><div class="cbody"><div class="cname">Barbour Orjinal Rozet 04</div><div class="cprice"><b>499,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51540511" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="aks" data-price="499.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_eae6eead7053e2d5ca9444849517eeb9.jpeg" alt=""></div><div class="cbody"><div class="cname">Barbour Orjinal Rozet 05</div><div class="cprice"><b>499,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/51540516" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="boxer" data-price="999.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_778854b4d68d10c179e2cb244a23fe43.jpeg" alt=""><span class="tag d">%17</span></div><div class="cbody"><div class="cname">DSL Kutulu Boxer 3'lü Siyah (Orjinal)</div><div class="cprice"><s>1.199,90 TL</s><b>999,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/48794284" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
+        <a class="card" href="urun.html" data-cat="boxer" data-price="999.90"><div class="thumb"><img src="https://cdn.shopier.app/pictures_mid/DupLuxuryWearr_2192c59ef64f49b75d44516cfa903a0b.jpeg" alt=""></div><div class="cbody"><div class="cname">CK Kutulu Boxer 3'lü Siyah (Orjinal)</div><div class="cprice"><b>999,90 TL</b></div><a class="buy" href="https://www.shopier.com/DupLuxuryWearr/41783480" target="_blank" rel="noopener">Shopier'den al</a></div></a>
+
       </div>
-      <div class="pager"><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">…</a><a href="#">279</a></div>
+      <div class="pager"><a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">…</a><a href="#">232</a></div>
     </main>
   </div>
 </div>
 
-<footer>
-  <div class="wrap">
-    <div class="fbot"><span>© 2026 Dup Luxury Wear</span><span>Visa · Mastercard · Troy · Kapıda ödeme</span></div>
-  </div>
-</footer>
+<footer><div class="wrap"><div class="fbot"><span>© 2026 Dup Luxury Wear</span><span>Visa · Mastercard · Troy · Kapıda ödeme</span><span class="sig">Tasarım: <a href="https://mucahidbalci.github.io" target="_blank" rel="noopener">mucahidbalci</a></span></div></div></footer>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
