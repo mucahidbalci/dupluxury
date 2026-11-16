@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dup Luxury Wear — Aynı görünüm, yarı fiyat</title>
+<meta name="description" content="Kumaş, kalıp ve detay karşılaştırmalı dupe luxury giyim. Aynı gün kargo, 14 gün iade, kapıda ödeme.">
+<style>
+  :root{--bg:#0b0b0c;--sf:#141416;--sf2:#17171a;--ln:#232326;--tx:#f2f2f0;--mu:#8b8b90;--gd:#b9a06a}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--tx);font-family:'Helvetica Neue',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+  .demo{background:var(--gd);color:#0b0b0c;text-align:center;font-size:11px;font-weight:700;letter-spacing:1.2px;padding:7px}
+  header{position:sticky;top:0;z-index:50;background:rgba(11,11,12,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;max-width:1180px;margin:0 auto;gap:16px}
+  .logo{font-size:15px;font-weight:700;letter-spacing:4px}
+  .menu{display:flex;gap:22px;font-size:11.5px;color:var(--mu);letter-spacing:.6px}
+  .menu a:hover{color:var(--tx)}
+  .cart{background:var(--tx);color:var(--bg);font-size:11.5px;font-weight:700;padding:9px 14px;border-radius:4px;white-space:nowrap}
+  .hero{position:relative;min-height:440px;display:flex;align-items:center;background:url('https://lookaside.fbsbx.com/lookaside/crawler/threads/DeHmRecERZf/0/image.jpg') center 20%/cover no-repeat}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,11,12,.95) 0%,rgba(11,11,12,.6) 50%,rgba(11,11,12,.05) 100%)}
+  .hero-in{position:relative;z-index:2;padding:70px 20px;max-width:520px;margin:0 auto 0 calc((100% - 1180px)/2 + 20px)}
+  .kicker{font-size:10px;letter-spacing:2.6px;color:var(--gd);margin-bottom:14px}
+  h1{font-size:clamp(30px,5.4vw,52px);line-height:1.02;letter-spacing:-1.4px;font-weight:700}
+  .hero p{color:#a5a5aa;font-size:13.5px;line-height:1.65;margin-top:16px;max-width:380px}
+  .btns{display:flex;gap:10px;margin-top:26px;flex-wrap:wrap}
+  .btn{font-size:12px;font-weight:700;padding:13px 20px;border-radius:4px;border:1px solid transparent;cursor:pointer;font-family:inherit}
+  .btn-p{background:var(--tx);color:var(--bg)}
+  .btn-s{background:transparent;color:var(--tx);border-color:#3a3a3f}
+  .trust{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+  .trust div{padding:14px 8px;text-align:center;font-size:11px;color:var(--mu);border-right:1px solid var(--ln)}
+  .trust div:last-child{border:0}
+  .sec{padding:44px 0 10px}
+  .sec-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:18px;gap:12px;flex-wrap:wrap}
+  .sec-head h2{font-size:14px;letter-spacing:1.6px;font-weight:700}
+  .sec-head span{font-size:11.5px;color:var(--mu)}
+  .chips{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+  .chip{border:1px solid var(--ln);color:var(--mu);font-size:11px;padding:7px 13px;border-radius:20px;cursor:pointer;background:none;font-family:inherit}
+  .chip.on{background:var(--tx);color:var(--bg);border-color:var(--tx);font-weight:700}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .card{cursor:pointer}
+  .thumb{position:relative;aspect-ratio:1;background:var(--sf2);border-radius:6px;overflow:hidden}
+  .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+  .card:hover .thumb img{transform:scale(1.04)}
+  .tag{position:absolute;top:9px;left:9px;font-size:9px;font-weight:800;padding:3px 7px;border-radius:3px;letter-spacing:.5px}
+  .tag.d{background:var(--gd);color:#0b0b0c}
+  .tag.n{background:var(--tx);color:var(--bg)}
+  .cname{font-size:12px;margin-top:9px}
+  .cprice{font-size:11.5px;color:var(--mu);margin-top:4px}
+  .cprice b{color:var(--tx);font-weight:700}
+  .cprice s{margin-right:6px}
+  .band{margin:44px 0;padding:24px;background:var(--sf);border:1px solid var(--ln);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .band h3{font-size:14px;margin-bottom:6px}
+  .band p{font-size:12px;color:var(--mu);line-height:1.6;max-width:440px}
+  footer{border-top:1px solid var(--ln);margin-top:40px;padding:34px 0 0}
+  .fcols{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;font-size:11.5px;color:var(--mu);line-height:2}
+  .fcols h4{color:var(--tx);font-size:10px;letter-spacing:1.6px;margin-bottom:8px;font-weight:700}
+  .fbot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--ln);margin-top:26px;padding:14px 0;font-size:10.5px;color:#6f6f74}
+  .modal{position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+  .modal.on{display:flex}
+  .mbox{background:var(--sf);border:1px solid var(--ln);border-radius:10px;max-width:760px;width:100%;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;max-height:90vh}
+  .mbox img{width:100%;height:100%;object-fit:cover;min-height:280px}
+  .mbody{padding:24px}
+  .mbody h3{font-size:18px;letter-spacing:-.4px}
+  .mbody .mp{font-size:15px;color:var(--tx);font-weight:700;margin:8px 0 14px}
+  .mbody .mp s{color:var(--mu);font-weight:400;margin-right:8px;font-size:12px}
+  .sizes{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
+  .size{border:1px solid var(--ln);font-size:11.5px;padding:8px 12px;border-radius:4px;cursor:pointer;background:none;color:var(--tx);font-family:inherit}
+  .size.on{background:var(--tx);color:var(--bg);border-color:var(--tx);font-weight:700}
+  .mdesc{font-size:11.5px;color:var(--mu);line-height:1.7;margin-bottom:18px}
+  .close{position:absolute;top:14px;right:18px;font-size:22px;color:var(--tx);cursor:pointer;z-index:2}
+  @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}.menu{display:none}.hero-in{margin:0 auto}.trust{grid-template-columns:repeat(2,1fr)}.trust div:nth-child(2){border-right:0}.fcols{grid-template-columns:repeat(2,1fr)}.mbox{grid-template-columns:1fr;max-height:85vh;overflow:auto}}
+</style>
+</head>
+<body>
+
+<div class="demo">ÖNİZLEME TASLAĞI — ürünler ve fiyatlar örnektir</div>
+
+<header>
+  <div class="nav">
+    <div class="logo">DUP LUXURY</div>
+    <nav class="menu">
+      <a href="#yeni">Yeni</a><a href="#ust">Üst</a><a href="#alt">Alt</a><a href="#aks">Aksesuar</a><a href="#outlet">Outlet</a>
+    </nav>
+    <div class="cart">Sepet · <span id="cnt">0</span></div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-in">
+    <div class="kicker">SON DÖNÜŞ 03</div>
+    <h1>Aynı görünüm.<br>Yarı fiyat.</h1>
+    <p>Kumaş, kalıp ve detay karşılaştırmalı. Orijinali boşver, işçiliğe bak. 750 TL üzeri kargo bedava.</p>
+    <div class="btns">
+      <a class="btn btn-p" href="#grid">Koleksiyonu gör</a>
+      <a class="btn btn-s" href="#beden">Beden tablosu</a>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div>Aynı gün kargo</div><div>14 gün iade</div><div>Kapıda ödeme</div><div>WhatsApp destek</div>
+</div>
+
+<div class="wrap sec" id="grid">
+  <div class="sec-head"><h2 id="yeni">ÇOK SATANLAR</h2><span>7 ürün</span></div>
+  <div class="chips">
+    <button class="chip on" data-f="all">Tümü</button>
+    <button class="chip" data-f="ust" id="ust">Üst</button>
+    <button class="chip" data-f="alt" id="alt">Alt</button>
+    <button class="chip" data-f="aks" id="aks">Aksesuar</button>
+    <button class="chip" data-f="outlet" id="outlet">Outlet</button>
+  </div>
+
+  <div class="grid" id="cards">
+    <div class="card" data-cat="ust" data-n="Boxy fit hoodie" data-p="490" data-o="1.290" data-i="https://i.frog.ink/bssg2nt1/303671308646-0.jpg">
+      <div class="thumb"><img src="https://i.frog.ink/bssg2nt1/303671308646-0.jpg" alt="Boxy fit hoodie"><span class="tag d">-62%</span></div>
+      <div class="cname">Boxy fit hoodie</div><div class="cprice"><s>1.290 TL</s><b>490 TL</b></div>
+    </div>
+    <div class="card" data-cat="alt" data-n="Multi pocket cargo" data-p="690" data-o="1.850" data-i="https://ae01.alicdn.com/kf/H9dbac5e4f8894b94ac0a153029d94513y.png">
+      <div class="thumb"><img src="https://ae01.alicdn.com/kf/H9dbac5e4f8894b94ac0a153029d94513y.png" alt="Multi pocket cargo"><span class="tag d">-63%</span></div>
+      <div class="cname">Multi pocket cargo</div><div class="cprice"><s>1.850 TL</s><b>690 TL</b></div>
+    </div>
+    <div class="card" data-cat="ust" data-n="Puffer bomber" data-p="1.190" data-o="" data-i="https://cdn.sanity.io/images/5l2ep0d7/production/5d7386280a765c51aa7d1c8f017773096651f271-1500x1500.webp?w=800&q=80&auto=format&fit=max">
+      <div class="thumb"><img src="https://cdn.sanity.io/images/5l2ep0d7/production/5d7386280a765c51aa7d1c8f017773096651f271-1500x1500.webp?w=800&q=80&auto=format&fit=max" alt="Puffer bomber"><span class="tag n">YENİ</span></div>
+      <div class="cname">Puffer bomber</div><div class="cprice"><b>1.190 TL</b></div>
+    </div>
+    <div class="card" data-cat="aks" data-n="Chrome aviator" data-p="290" data-o="640" data-i="https://shopgug.com/cdn/shop/products/WebsiteAccessoryTemplate2-2022-10-29T085720.048.png?v=1667051962&width=800">
+      <div class="thumb"><img src="https://shopgug.com/cdn/shop/products/WebsiteAccessoryTemplate2-2022-10-29T085720.048.png?v=1667051962&width=800" alt="Chrome aviator"><span class="tag d">-55%</span></div>
+      <div class="cname">Chrome aviator</div><div class="cprice"><s>640 TL</s><b>290 TL</b></div>
+    </div>
+    <div class="card" data-cat="ust outlet" data-n="Grafik tee" data-p="350" data-o="590" data-i="https://rebuild-era.com/cdn/shop/files/Dark_Streetwear_Editorial_T-Shirt.png?v=1780148028&width=700">
+      <div class="thumb"><img src="https://rebuild-era.com/cdn/shop/files/Dark_Streetwear_Editorial_T-Shirt.png?v=1780148028&width=700" alt="Grafik tee"><span class="tag d">-41%</span></div>
+      <div class="cname">Grafik tee</div><div class="cprice"><s>590 TL</s><b>350 TL</b></div>
+    </div>
+    <div class="card" data-cat="aks" data-n="Zincir set" data-p="310" data-o="" data-i="https://www.remeinz.com/cdn/shop/files/IMG_-_001_IMG_-_003_IMG_-_004_1.jpg?v=1774908373&width=600">
+      <div class="thumb"><img src="https://www.remeinz.com/cdn/shop/files/IMG_-_001_IMG_-_003_IMG_-_004_1.jpg?v=1774908373&width=600" alt="Zincir set"><span class="tag n">YENİ</span></div>
+      <div class="cname">Zincir set</div><div class="cprice"><b>310 TL</b></div>
+    </div>
+    <div class="card" data-cat="alt outlet" data-n="Chunky sneaker" data-p="1.240" data-o="2.100" data-i="https://images.pexels.com/photos/12611630/pexels-photo-12611630.jpeg?cs=tinysrgb&dpr=1&w=600">
+      <div class="thumb"><img src="https://images.pexels.com/photos/12611630/pexels-photo-12611630.jpeg?cs=tinysrgb&dpr=1&w=600" alt="Chunky sneaker"><span class="tag d">-41%</span></div>
+      <div class="cname">Chunky sneaker</div><div class="cprice"><s>2.100 TL</s><b>1.240 TL</b></div>
+    </div>
+  </div>
+
+  <div class="band" id="beden">
+    <div>
+      <h3>Beden tablosu + kumaş detayı</h3>
+      <p>Her ürünün altında ölçü tablosu ve kumaş gramajı var. Beden yüzünden iade olmuyor, iade oranı düşüyor.</p>
+    </div>
+    <a class="btn btn-p" href="#grid">Beden tablosu</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div><h4>MAĞAZA</h4>Hakkımızda<br>Toptan<br>Bayilik<br>İletişim</div>
+      <div><h4>YARDIM</h4>Kargo takip<br>İade / değişim<br>Beden rehberi<br>SSS</div>
+      <div><h4>KURUMSAL</h4>KVKK<br>Mesafeli satış<br>Çerez politikası</div>
+      <div><h4>TAKİP</h4>Instagram<br>WhatsApp<br>E-posta listesi</div>
+    </div>
+    <div class="fbot"><span>© 2026 Dup Luxury Wear</span><span>Visa · Mastercard · Troy · Kapıda ödeme</span></div>
+  </div>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="mbox" style="position:relative">
+    <span class="close" onclick="closeM()">×</span>
+    <img id="mimg" src="" alt="">
+    <div class="mbody">
+      <h3 id="mname"></h3>
+      <div class="mp" id="mprice"></div>
+      <div class="sizes" id="msizes"></div>
+      <div class="mdesc">Ağır gramajlı kumaş, dökümlü kalıp. Ölçüler için beden tablosuna bakın. Aynı gün kargo, 14 gün içinde iade.</div>
+      <button class="btn btn-p" style="width:100%" onclick="addCart()">Sepete ekle</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  var cnt = 0, cur = null;
+  function addCart(){ if(!cur) return; cnt++; document.getElementById('cnt').textContent = cnt; closeM(); }
+  function closeM(){ document.getElementById('modal').classList.remove('on'); }
+  document.getElementById('cards').addEventListener('click', function(e){
+    var c = e.target.closest('.card'); if(!c) return;
+    cur = c;
+    document.getElementById('mimg').src = c.dataset.i;
+    document.getElementById('mname').textContent = c.dataset.n;
+    document.getElementById('mprice').innerHTML = (c.dataset.o ? '<s>'+c.dataset.o+' TL</s>' : '') + c.dataset.p + ' TL';
+    var sz = c.dataset.cat === 'aks' ? ['Tek beden'] : ['S','M','L','XL'];
+    var h = '';
+    for (var i=0;i<sz.length;i++) h += '<button class="size'+(i===0?' on':'')+'">'+sz[i]+'</button>';
+    var box = document.getElementById('msizes'); box.innerHTML = h;
+    box.onclick = function(ev){ if(!ev.target.classList.contains('size')) return;
+      box.querySelectorAll('.size').forEach(function(b){b.classList.remove('on')}); ev.target.classList.add('on'); };
+    document.getElementById('modal').classList.add('on');
+  });
+  document.getElementById('modal').addEventListener('click', function(e){ if(e.target.id==='modal') closeM(); });
+  document.querySelectorAll('.chip').forEach(function(ch){
+    ch.onclick = function(){
+      document.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on')});
+      ch.classList.add('on');
+      var f = ch.dataset.f;
+      document.querySelectorAll('.card').forEach(function(card){
+        card.style.display = (f==='all' || card.dataset.cat.indexOf(f) > -1) ? '' : 'none';
+      });
+    };
+  });
+</script>
+</body>
+</html>
