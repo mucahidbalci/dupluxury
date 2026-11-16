@@ -8,12 +8,10 @@ function toast(t){
   el.textContent = t; el.classList.add('on');
   setTimeout(() => el.classList.remove('on'), 2200);
 }
-function addToCart(n){
-  cart++; localStorage.setItem('dup_cart', cart); paint();
-  toast((n || 'Ürün') + ' sepete eklendi');
-}
 document.querySelectorAll('[data-add]').forEach(b => b.addEventListener('click', e => {
-  e.preventDefault(); addToCart(b.dataset.add);
+  e.preventDefault();
+  cart++; localStorage.setItem('dup_cart', cart); paint();
+  toast((b.dataset.add || 'Ürün') + ' sepete eklendi');
 }));
 document.querySelectorAll('.size').forEach(b => b.addEventListener('click', () => {
   b.parentElement.querySelectorAll('.size').forEach(x => x.classList.remove('on'));
@@ -42,3 +40,7 @@ if(sortSel) sortSel.addEventListener('change', () => {
   if(sortSel.value === 'desc') items.sort((a,b) => +b.dataset.price - +a.dataset.price);
   items.forEach(i => g.appendChild(i));
 });
+const wa = document.createElement('a');
+wa.href = 'https://wa.me/905315595503?text=Merhaba%2C%20%C3%BCr%C3%BCn%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum';
+wa.target = '_blank'; wa.rel = 'noopener'; wa.className = 'wafloat'; wa.textContent = 'WhatsApp';
+document.body.appendChild(wa);
